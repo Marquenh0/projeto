@@ -1,0 +1,47 @@
+
+#cta {
+    width: 35%;
+    display: table-row;
+    gap: 28px;
+}
+#cta title {
+    font-size: 4rem;
+    color: #b40101;
+}
+#cta.title span {
+    color: #e9a209;
+}
+#cta .description {
+    font-size: 1.2rem;
+}
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+
+}
+#cta_buttons a {
+    text-decoration: none;
+    color: #fffbfb;
+}
+#img2 {
+    width: 100%;
+    display: block;
+    margin: 2px auto; /* Espaçamento externo para a imagem */
+  }
+  @media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+  }
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+#phone_button button {
+    display: none;
+ }
+}

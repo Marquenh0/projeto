@@ -1,0 +1,12 @@
+#lorem {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Exemplo de altura do contêiner */
+  }
+  
+.conteinerw{
+    display: flexbox;
+    place-items: center;
+    height: 100vh;
+  }
+  

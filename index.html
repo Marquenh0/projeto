@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conteudo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="javascript/script.js">
+    <link rel="stylesheet" href="imagens/15 Sem Título_20240515151823.png">
+    <link rel="stylesheet" href="imagens/11 Sem Título_20240509152157.png">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/tutorial.css">
+    <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="import" href="component.html">
+    <link rel="stylesheet" href="imagens.html">
+    <link rel="stylesheet" href="javascript/t.html">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body onload="window.scrollTo(0, 0);" id="home2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header>
+      <!--NAVBAR -->
+        <nav id="navbar">
+            <i class="fa-solid fa-laptop-code" id="nav_logo"> M&M TEC</i>
+            <ul id="nav_list">
+                <li class="nav-item"> 
+                    <a href="#home">início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tutorial">tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedback">feedback</a>
+                </li>
+            </ul>
+            <!--NAVBAR MOBILE -->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"> 
+                    <a href="#home">início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tutorial">tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedback">feedback</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--PARTE INICIAL (HOME)-->
+    <main id="content">
+        <section id="home" >
+            <p><img src="imagens/11 Sem Título_20240509152157.png" alt="" id="img2"></p>
+            <br>
+            <div id="cta">
+                <h1 class="title">Automatize sua <span>casa!</span></h1> </div>
+                <p class="description">
+                    A automação com Arduino representa um fascinante mundo de possibilidades onde a criatividade encontra a tecnologia para simplificar tarefas cotidianas, criar projetos inovadores e otimizar processos industriais. O Arduino, uma plataforma de hardware de código aberto, oferece uma base acessível e flexível para iniciantes e especialistas em eletrônica embarcada. Com sua ampla gama de sensores e atuadores, o Arduino capacita os entusiastas a automatizar uma infinidade de sistemas, desde pequenos dispositivos domésticos até complexos sistemas de controle industrial. Neste texto introdutório, exploraremos o universo da automação com Arduino, destacando suas aplicações, benefícios e potenciais, além de oferecer insights sobre como começar a criar seus próprios projetos de automação.
+                </p>
+                <br>
+                <div id="cta_buttons">
+                    <a href="#tutorial" class="btn-default">Aprenda!
+                    </a>
+                    
+            </div>
+        </section>
+    </div>
+    <!--PARTE ESCRITA DO SITE -->
+            <section id="tutorial"> 
+                    <div id="container">
+                        <div id="inicio">
+                            <div class="title_div">
+                                <h2 class="title_t1">Entenda como automatizar sua casa</h2>
+                            </div>
+                            <br>
+                        </div>
+                        <!--MENU SCROLLSPY -->
+                        <div class="conteiner-fluid">
+                          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="80" tabindex="0">
+                            <div class="row">
+                                <div class="col-4">
+                                  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end scrollspy-menu">
+                                    <nav class="nav nav-pills flex-column">
+                                      <a class="nav-link" href="#item-1">Inicio</a>
+                                      <nav class="nav nav-pills flex-column">
+                                        <a class="nav-link ms-3 my-1" href="#item-1-1">Materiais Necessários</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-1-2">Configuração do Arduino</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-2"> Comunicação Bluetooth</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3">Configuração do MQTT</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3-1">Programação do Arduino</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3-2">Aplicativo ou Interface de Controle</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3-3">Testes e Ajustes</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3-4">Manutenção e Expansão</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-3-5">Links de tutoriais do youtube</a>
+                                      </nav>
+                                    </nav>
+                                  </nav>
+                                </div>
+                          
+                        
+                          
+                              <!-- CONTEUDO DO SITE (TEXTOS)-->
+                              <div class="col-8">
+                                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                  <div id="item-1">
+                                    <div class="conteinerw">
+                                    <h4>Planejamento e Preparação</h4>
+                                    <p>Antes de iniciar a automação residencial com Arduino, MQTT e Bluetooth, é essencial fazer um planejamento detalhado. Defina claramente os objetivos do projeto, como quais aspectos da casa você deseja automatizar, seja iluminação, temperatura, segurança ou outros. Aprender os conceitos básicos de Arduino, MQTT e Bluetooth é fundamental para o sucesso do projeto. Familiarize-se com a programação em C++ para Arduino, protocolos de comunicação e eletrônica básica, garantindo que você esteja preparado para enfrentar qualquer desafio técnico que possa surgir.
+                                      <br>
+                                      - Defina os objetivos do projeto
+                              
+                                      <br>
+                                      - Aprenda os conceitos básicos de Arduino, MQTT e Bluetooth </p>
+                                  </div>
+                                  <div id="item-1-1">
+                                    <h2 class="title_t">Materiais Necessários</h2>
+                                      <p>Para montar um sistema de automação residencial, você precisará de alguns componentes fundamentais. Placas Arduino como Arduino Uno, Mega ou Nano são essenciais, além de um módulo Bluetooth HC-05 ou HC-06 para comunicação. Se você optar por conexão Wi-Fi, módulos como ESP8266 ou ESP32 são recomendados. Adquira também sensores (temperatura, umidade, movimento), atuadores (relés, lâmpadas LED, motores), protoboard, jumpers e outros componentes eletrônicos necessários. Não se esqueça de uma fonte de alimentação adequada para o Arduino e demais dispositivos.</p>
+                                      <br>
+                                      <br>
+                                      <!--carrosel-->  
+                                      <div id="myCarousel">
+                                        <div id="carouselExample" class="carousel slide">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="imagens/arduino.png" class="d-block w-100" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="imagens/blue.png" class="d-block w-100" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="imagens/wifi.png" class="d-block w-100" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="imagens/jumpers.png" class="d-block w-100" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="imagens/fonte de alimenta.png" class="d-block w-100" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="imagens/protobord.png" class="d-block w-100" alt="...">
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
+                                      </div>
+                                        <br>
+                                      - Placas Arduino (Uno, Mega, Nano) <br>
+                                      - Módulo Bluetooth HC-05/HC-06 <br>
+                                      - Módulo Wi-Fi ESP8266/ESP32 (opcional) <br>
+                                      - Sensores e atuadores diversos <br>
+                                      - Protoboard e jumpers <br>
+                                      - Fonte de alimentação <br>
+                                      </p>
+                                      </p>
+                                    </p>
+                                  </div>
+                            </div>
+                                </div>
+                                <div id="item-1-2">
+                                  <p><h2 class="title_t">Configuração do Arduino</h2>
+                                    A configuração do Arduino começa com a instalação da IDE do Arduino em seu computador. Conecte a placa Arduino ao computador via cabo USB e verifique se a IDE reconhece a placa corretamente. Em seguida, faça a instalação das bibliotecas necessárias para MQTT e Bluetooth, preparando a placa para se comunicar com outros dispositivos. A configuração inicial é crucial para garantir que o Arduino esteja pronto para executar os comandos necessários e interagir com os componentes de hardware e software do projeto.
+                                    <br>
+                                    - Instale a IDE do Arduino
+                                    <br>
+                                    - Conecte o Arduino ao computador
+                                    <br>
+                                    - Verifique o reconhecimento da placa
+                                    </p>
+                                    <p></p>
+                                </div>
+                                <div id="item-2">
+                                  <p> <h2 class="title_t">Comunicação Bluetooth</h2>
+                                    A comunicação Bluetooth é estabelecida conectando o módulo HC-05 ou HC-06 ao Arduino. Conecte os pinos RX e TX do módulo aos pinos TX e RX do Arduino, respectivamente, e forneça alimentação ao módulo. Configure o módulo Bluetooth usando comandos AT para definir parâmetros como nome e senha. Essa comunicação permite que o Arduino receba comandos e envie dados a dispositivos móveis ou outros controladores Bluetooth, essencial para a interação em tempo real no sistema de automação.
+                                    <br>
+                                    - Conecte o módulo HC-05/HC-06 ao Arduino <br>
+                                    - Configure o módulo Bluetooth com comandos AT
+                                    </p></p>
+                                </div>
+                                <div id="item-3">
+                      
+                                  <p><h2 class="title_t">Configuração do MQTT</h2>
+                                    <a href="https://testclient-cloud.mqtt.cool/" target="_blank" class="limk">O MQTT (Message Queuing Telemetry Transport) </a> é um protocolo leve de comunicação ideal para automação residencial. Configure um broker MQTT, como Mosquitto, em um servidor local ou utilize um serviço de nuvem como HiveMQ. No Arduino, instale a biblioteca PubSubClient para facilitar a comunicação MQTT. A configuração do MQTT permite que o Arduino publique e subscreva mensagens de e para outros dispositivos na rede, proporcionando um controle eficiente e monitoramento dos sistemas automatizados.
+                                    <br>
+                                    - Configure um broker MQTT (Mosquitto, HiveMQ)
+                                    <br>
+                                    - Instale a biblioteca PubSubClient na IDE do Arduino
+                                    <br></p>
+                                </div>
+                                <div id="item-3-1">
+                                
+                                  <p><h2 class="title_t">Programação do Arduino</h2>
+                                    <br>
+                                    A programação do Arduino envolve escrever códigos para conectar-se ao módulo Bluetooth, ler sensores e enviar dados via MQTT. Utilizando a linguagem C++, configure o Arduino para se conectar ao Wi-Fi, se necessário, e estabelecer comunicação com o broker MQTT. Escreva rotinas para ler os dados dos sensores e enviar comandos aos atuadores. Faça o upload do código para o Arduino através da IDE, testando e ajustando conforme necessário para garantir que o sistema funcione conforme planejado.
+                                    <br>
+                                    - Escreva o código para Bluetooth e MQTT
+                                    <br>
+                                    - Faça o upload do código para o Arduino
+                                    <br>
+                                    - Teste e ajuste o funcionamento
+                                    <br></p>
+                                </div>
+                                <div id="item-3-2">
+                                
+                                  <p><h2 class="title_t">Aplicativo ou Interface de Controle</h2>
+                                    Desenvolver um aplicativo móvel ou interface de controle é crucial para interagir com o sistema de automação. Um aplicativo Bluetooth pode enviar comandos diretamente ao Arduino, enquanto uma interface MQTT, como Node-RED, permite monitorar e controlar dispositivos através de um painel de controle. Estas interfaces facilitam o uso diário e proporcionam uma maneira intuitiva de gerenciar todos os aspectos do sistema de automação residencial.
+                                    <br>
+                                    - Crie um aplicativo móvel para comunicação Bluetooth
+                                    <br>
+                                    - Desenvolva uma interface MQTT com Node-RED
+                                    <br></p>
+                                </div>
+                                <div id="item-3-3">
+                                  <p><h2 class="title_t">Testes e Ajustes</h2>
+                                    Os testes são fundamentais para garantir que todos os componentes do sistema de automação estejam funcionando corretamente. Verifique a comunicação entre o Arduino, o módulo Bluetooth e o broker MQTT, ajustando parâmetros conforme necessário. Realize testes de desempenho e estabilidade, identificando e resolvendo qualquer problema que possa surgir. A etapa de ajustes finos é essencial para otimizar o sistema e garantir uma operação suave e eficiente.
+                                    <br>
+                                    - Verifique a comunicação entre dispositivos
+                                    <br>
+                                    - Realize ajustes conforme necessário
+                                    <br></p>
+
+                                </div>
+                                <div id="item-3-4">
+                                  <p>
+                                    <h2 class="title_t">Manutenção e Expansão</h2>
+                               A manutenção regular é necessária para garantir que todos os dispositivos do sistema de automação estejam funcionando corretamente. Verifique periodicamente os sensores e atuadores, atualize o firmware e software conforme necessário e faça ajustes para melhorar a performance. Considere expandir o sistema adicionando novos sensores e atuadores para aumentar a funcionalidade e a conveniência da automação residencial.
+                        <br>
+                                 - Realize manutenção regular dos dispositivos <br>
+                                 - Adicione novos sensores e atuadores conforme necessário
+                                  </p>
+                                </div>
+                                <h2 class="title_t">Tutoriais Diversos</h2>
+                              
+                                
+                                  <div class="col-8">
+                                    <div class="ratio ratio-21x9">
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/qBto9zfat-c?si=sYO6efYux6IP3oUO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                    <br>
+                                     <div class="ratio ratio-21x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/vd0L1Nv2h48?si=FX8ie0tiW2WO4oUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                    <br>
+                                     <div class="ratio ratio-21x9">
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8GwKgiC3me8?si=mxNv-nYTdBaC8y3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                    <br>
+                                     <div class="ratio ratio-21x9">
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/vGRpxMyH2dY?si=oNEAx-udY1fVe6ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                  </div>
+                                   
+                                 </div>
+<br>                                
+<br>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>     
+                      </div>
+                    </div> 
+            
+            </section>
+        </div>
+        <!--FEEDBACK -->
+        <section id="feedback"> 
+          <div class="container">
+              <h2 class="left">Deixe seu feedback!</h2>
+              <form action="php/form3inserir.php" method="post" class="right">
+                  <div class="input-group">
+                      <label for="inome">Nome:</label>
+                      <input type="text" id="inome" name="nome" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="iemail">Email:</label>
+                      <input type="email" id="iemail" name="email" required>
+                  </div>
+                  <div class="input-group">
+                      <label for="mensagem">Mensagem:</label>
+                      <textarea id="imensagem" name="mensagem" rows="5" required></textarea>
+                  </div>
+                  <input type="submit" value="Enviar" class="btn-default1" class="button-link">
+                 <br>
+              </form>
+      </section>
+        <!--FOOTER -->
+        <footer>
+            <section id="footer">
+                <div id="footer_itens">
+                  <div class="social-media-buttons">
+                      <a href="https://www.instagram.com/mmtecnologia.itaguai?igsh=MXh1bHV6MW1rM2JmMQ==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <br>
+                    <a href="tel:+55 21997608990" id="phone_button">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                    </div>
+                    <br>
+                    <span id="copyright">
+                        &copy 2024 M&M TEC
+                    </span>
+
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/scphp.js"> </script>
+</body>
+</html>

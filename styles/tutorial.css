@@ -1,0 +1,96 @@
+#tutorial{
+    padding-bottom: 80px;
+    z-index: -1;
+ }  
+ #inicio {
+    padding-top: 60px
+  }
+.title_t {
+    padding: 7px;
+
+}
+#container-t{
+    display: table-row;
+    margin-bottom: 50px;
+    text-align: center; 
+    width: 35%;
+    gap: 28px;
+}
+#planejamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px; /* ajuste conforme necessário */
+    margin: 0 auto;
+    padding: 20px;
+}
+#planejamento .img {
+    max-width: 40%; /* ajuste conforme necessário */
+    height: auto;
+    padding-right: 25px;
+}
+.title_t1{
+    padding: 10px;
+    text-align: center;
+}
+.title_div{
+    background-color: #f09205;
+  }
+ /* custom.css */
+.scrollspy-menu .nav-link {
+    background-color: #494847; /* Cor de fundo */
+    color: #ffffff;           /* Cor do texto */
+    border-radius: 0.25rem;   /* Bordas arredondadas */
+    margin-bottom: 0.5rem;    /* Espaçamento inferior */
+    display: flex;
+}
+
+.scrollspy-menu .nav-link:hover {
+    background-color: #ffe100; /* Cor de fundo ao passar o mouse */
+    color: #000000;  
+}
+
+.scrollspy-menu .nav-link.active {
+    background-color: #f09205 !important; /* Cor de fundo do link ativo */
+    color: #ffffff;            /* Cor do texto do link ativo */
+}
+.scrollspy-menu {
+    top: 0;
+    height: calc(100vh - 1rem); /* Altura da viewport menos uma margem */
+    overflow-y: auto;
+    display: flex;
+
+}
+.content-section {
+    position: relative;
+}
+.content-section::before {
+    content: '#nav-link-1-1';
+    display: block;
+    height: 80px; /* Ajuste conforme necessário */
+    margin-top: 80px; /* Ajuste conforme necessário */
+    visibility: hidden;
+}
+.limk {
+    color: #f09205;
+}
+.limk:hover {
+    color: #eba308;
+}
+/* Estilizando as bordas do carrossel */
+#myCarousel {
+    border: 5px solid #dcdee0; /* Cor da borda */
+    border-block: 15px;       /* Bordas arredondadas */
+}
+
+/* Modificando a cor das setas de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 10px;             /* Adiciona espaço ao redor das setas */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #e78d05; /* Cor das setas ao passar o mouse */
+    color: #000000;
+}

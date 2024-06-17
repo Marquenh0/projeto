@@ -1,0 +1,67 @@
+#include <Servo.h>
+#include <SoftwareSerial.h>
+
+#define verde 13
+#define vermelho 12
+//tx,rx
+SoftwareSerial bluetooth(2, 3);
+int valorb = 0; // Inicializar a variável valorb
+
+void setup() {
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  Serial.begin(9600);
+  bluetooth.begin(9600);
+  pinMode(verde, OUTPUT);
+  pinMode(vermelho, OUTPUT);
+}
+
+void loop() {
+  if (bluetooth.available()) {
+    delay(10); // Pequeno delay para estabilidade da comunicação
+    valorb = bluetooth.read();
+    Serial.println(valorb);
+    
+    if (valorb == 'f'){
+    digitalWrite(10, HIGH);
+    analogWrite(5, 255);
+    digitalWrite(11, HIGH);
+    analogWrite(6, 255);
+    }
+    if (valorb == 't'){
+      digitalWrite(10, LOW);
+      analogWrite(5, 255);
+      digitalWrite(11, LOW);
+    analogWrite(6, 255);
+    }
+    if (valorb == 'p'){
+    analogWrite(5, 0);
+    analogWrite(6, 0);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    }
+    if (valorb == 'V') {
+      digitalWrite(verde, HIGH); // Acender LED verde
+    }
+    if (valorb == 'v') {
+      digitalWrite(verde, LOW); // Apagar LED verde
+    }
+    if (valorb == 'L') {
+      digitalWrite(vermelho, HIGH); // Acender LED vermelho
+    }
+    if (valorb == 'l') {
+      digitalWrite(vermelho, LOW); // Apagar LED
+    }
+    if (valorb == 'W') {
+      digitalWrite(vermelho, HIGH); // Acender LED vermelho
+      digitalWrite(verde, HIGH);
+    }
+    if (valorb == 'w') {
+      digitalWrite(vermelho, LOW); // Apagar LED
+      digitalWrite(verde, LOW);
+    }
+  }
+}
+
